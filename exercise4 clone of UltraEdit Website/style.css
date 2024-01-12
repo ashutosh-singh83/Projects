@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right ul {
+  display: flex;
+  gap: 20px;
+}
+
+.right ul li {
+  list-style: none;
+}
+
+ul img {
+  margin-left: -20px;
+  margin-top: 3px;
+}
+
+main {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  width: 950px;
+  height: auto;
+  margin: 40px 270px;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 0px;
+  /* background-color: aqua; */
+}
+
+.box {
+  width: 300px;
+  height: 150px;
+  background-color: rgb(253, 247, 247);
+}
+.green {
+  background-color: #5cb85c;
+}
+.blue {
+  background-color: #00b6d1;
+}
+button {
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 7px;
+  font-family: revert;
+}
+.text {
+  padding: 12px;
+  font-size: 20px;
+  font-family: system-ui;
+  font-weight: 700;
+}
