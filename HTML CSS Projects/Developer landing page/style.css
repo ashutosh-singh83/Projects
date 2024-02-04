@@ -109,16 +109,11 @@ footer {
   height: 80px;
   background-color: #161619;
   text-align: center;
-  position: relative;
-}
-footer p {
   font-size: 25px;
   color: #ffffff;
   text-transform: uppercase;
-  position: absolute;
-  top: 25%;
-  left: 40%;
 }
+
 @media (max-width: 750px) {
   .developer {
     width: 100vw;
@@ -127,7 +122,7 @@ footer p {
   .text {
     /* position: absolute; */
     top: 20px;
-    left: 130px;
+    left: 20vw;
   }
   .big {
     font-size: 36px;
