@@ -1,5 +1,7 @@
 let userScore=0;
 let compScore=0;
+let userScoreMsg=document.querySelector("#userScore");
+let compScoreMsg=document.querySelector("#compScore");
 const choices=document.querySelectorAll(".choice");
 const msg=document.querySelector(".msg_text");
 const genCompChoice=()=>{
@@ -7,26 +9,27 @@ const genCompChoice=()=>{
     let compChoiceIdx=Math.floor(Math.random()*3);
     return options[compChoiceIdx];
 }
-const showWinner=(userWin)=>{
+const showWinner=(userWin,userChoice,compChoice)=>{
     if(userWin){
-        console.log("You win")
-        msg.innerText="You Won";
+        userScore++;
+        userScoreMsg.innerText=userScore;
+        msg.innerText=`You win! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="green";
     }else{
-        console.log("You lose")
-        msg.innerText="You lose";
+        compScore++;
+        compScoreMsg.innerText=compScore;
+        msg.innerText=`You lose. ${compChoice} beats ${userChoice}`;
         msg.style.backgroundColor="red";
     }
 }
 const drawGame=()=>{
-    console.log("game draw")
     msg.innerText="Game draw. Play again";
     msg.style.backgroundColor="#1d3557";
 }
 const playGame=(userChoice)=>{
-    console.log("user=",userChoice);
+    
     const compChoice=genCompChoice();
-    console.log("comp=",compChoice);
+    
     //comparing user and comp choices
     let userWin=true;
     if(userChoice===compChoice){
@@ -42,7 +45,7 @@ const playGame=(userChoice)=>{
             //rock paper
             userWin=compChoice==="rock"?false:true;
         }
-        showWinner(userWin);
+        showWinner(userWin,userChoice,compChoice);
     }
     
 }

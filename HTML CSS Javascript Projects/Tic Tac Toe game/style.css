@@ -5,7 +5,9 @@
 body {
   text-align: center;
   background-color: #731963;
+  overflow: hidden;
 }
+
 .container {
   height: 70vmin;
   display: flex;
