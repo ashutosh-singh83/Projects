@@ -33,7 +33,7 @@ body {
   background-color: #f0e100;
   color: #731963;
 }
-.reset-btn {
+.reset_btn {
   padding: 1rem;
   background-color: #0b3c49;
   color: white;
@@ -41,7 +41,7 @@ body {
   border: none;
   border-radius: 1rem;
 }
-.new-btn {
+.new_btn {
   padding: 1rem;
   background-color: #0b3c49;
   color: white;
