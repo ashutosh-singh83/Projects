@@ -1,0 +1,10 @@
+.hide {
+  display: none;
+}
+.inline {
+  display: inline;
+  transition: all 1s linear;
+}
+.rot45 {
+  transform: rotate(45deg);
+}
