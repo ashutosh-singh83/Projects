@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "cooper-lt-bt", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 25px;
+  position: fixed;
+  top: 0;
+}
+#nav h1 {
+  font-weight: 150;
+}
+#nav > #part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav #part2 a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+#nav #part2 a:nth-last-child(1) {
+  border: 1px solid black;
+  padding: 10px 15px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+#nav #part2 a:nth-last-child(1) #green {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: springgreen;
+  transition: left 0.6s ease;
+}
+#nav #part2 a:nth-last-child(1) h4 {
+  font-weight: 100;
+  position: relative;
+  z-index: 99;
+}
+#nav #part2 a:nth-last-child(1):hover #green {
+  left: 0;
+}
+#content h1 {
+  position: relative;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 90;
+  z-index: 99;
+}
+#content h4 {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 90;
+  z-index: 99;
+}
+#content h4 #arrow {
+  border: 1px solid black;
+  padding: 2px 8px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+#content h4 #arrow #green {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: springgreen;
+  transition: left 0.6s ease;
+}
+#content h4:hover {
+  left: 0;
+}
+#content #img1 {
+  position: absolute;
+  top: 15%;
+  left: 8.5%;
+  height: 73%;
+  width: 23%;
+}
+#content #img2 {
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  height: 33%;
+  width: 17%;
+  background-size: cover;
+}
+#content #img3 {
+  position: absolute;
+  bottom: 10%;
+  right: 13%;
+  height: 40%;
+  width: 19%;
+  background-size: cover;
+}

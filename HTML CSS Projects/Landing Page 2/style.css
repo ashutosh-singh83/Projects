@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  display: flex;
+  height: 100%;
+  background-color: red;
+}
+#left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+}
+#right {
+  width: 60%;
+  height: 100%;
+  background-color: green;
+}
+#rtop {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: yellow;
+}
+#rtopleft {
+  width: 50%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlfGVufDB8fDB8fHww");
+  background-position: center;
+  background-size: cover;
+}
+#rtopright {
+  width: 50%;
+  height: 100%;
+
+  background-image: url(https://images.unsplash.com/photo-1590872000386-4348c6393115?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fG9yYW5nZXxlbnwwfHwwfHx8MA%3D%3D);
+
+  background-position: center;
+  background-size: cover;
+}
+#rbottom {
+  width: 100%;
+  height: 50%;
+
+  background-image: url(https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+#lnav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+#lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+}
+#lnavr i {
+  color: royalblue;
+}
+#left #textcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textcenter h1 {
+  font-size: 90px;
+  font-weight: 900;
+}
+#textcenter p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  opacity: 0.6;
+}
+#textcenter a {
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+  #main #left {
+    width: 100%;
+  }
+  #main #right {
+    width: 100%;
+  }
+}
