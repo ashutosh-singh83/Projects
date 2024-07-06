@@ -4,8 +4,8 @@ let msgContainer = document.querySelector(".msg_container");
 let msg = document.querySelector(".msg");
 let resetBtn = document.querySelector(".reset_btn");
 let newBtn = document.querySelector(".new_btn");
-let clickAudio = new Audio("/audio/mouseVoice.mp3");
-let winnerAudio = new Audio("/audio/winMusic.mp3");
+let clickAudio = new Audio("/audio/click_voice.mp3");
+let winnerAudio = new Audio("/audio/winner_music.mp3");
 const winPatterns = [
   [0, 1, 2],
   [3, 4, 5],
@@ -23,7 +23,7 @@ boxes.forEach((box) => {
       box.innerText = "X";
       turnX = false;
     } else {
-      box.innerText = "0";
+      box.innerText = "O";
       turnX = true;
     }
 
